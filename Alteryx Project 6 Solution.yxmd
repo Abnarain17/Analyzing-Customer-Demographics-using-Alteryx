@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Imported Customer _Details Data using input tool</AnnotationText>
+          <DefaultAnnotationText>Data.xlsx
+Query=`Customer Details$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer ID" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+            <Field name="Name" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Sir_Name" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Gender" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Age" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+            <Field name="Country" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Job Classification" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="F9" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+            <Field name="Marital Status" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Total Sales" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+            <Field name="Last Purchase Date" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Average Order Value" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+            <Field name="Number of Orders" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+            <Field name="Sales Channel" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Product name" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Product Category" size="255" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="V_String" />
+            <Field name="Customer Lifetime Value" source="File: C:\Users\admin\Desktop\Alteryx Project Files\AP6\Data.xlsx|||`Customer Details$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Sir_Name" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Age" selected="True" />
+            <SelectField field="Country" selected="True" />
+            <SelectField field="State" selected="True" />
+            <SelectField field="Marital Status" selected="True" />
+            <SelectField field="Total Sales" selected="True" />
+            <SelectField field="Profit" selected="True" />
+            <SelectField field="Last Purchase Date" selected="True" />
+            <SelectField field="Average Order Value" selected="True" />
+            <SelectField field="Number of Orders" selected="True" />
+            <SelectField field="Product name" selected="True" />
+            <SelectField field="Product Category" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Using the "Select" tool to remove unnecessary fields</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="354" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Name","Sir_Name","Gender","Age","Country","State","Marital Status","Total Sales","Profit","Last Purchase Date","Average Order Value","Number of Orders","Product name","Product Category"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Using  the "Data cleansing" tool to remove any null or blank values and unnecessary spaces in the data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="510" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Name" />
+            <Field field="Sir_Name" />
+            <Field field="Gender" />
+            <Field field="Age" />
+            <Field field="Country" />
+            <Field field="State" />
+            <Field field="Marital Status" />
+            <Field field="Total Sales" />
+            <Field field="Profit" />
+            <Field field="Last Purchase Date" />
+            <Field field="Average Order Value" />
+            <Field field="Number of Orders" />
+            <Field field="Product name" />
+            <Field field="Product Category" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Using the "Unique" tool to remove any duplicate values in the data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="702" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="Age" action="Avg" rename="Avg_Age" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>state wise average customer age data by using summarize tool</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="834" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Avg_Age" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Using sort tool average age values are sorted in ascending order</AnnotationText>
+          <DefaultAnnotationText>Avg_Age - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="954" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>pie</type>
+              <mode>markers</mode>
+              <name>state wise average customer age data</name>
+              <orientation>v</orientation>
+              <xsrc>State</xsrc>
+              <ysrc>Avg_Age</ysrc>
+              <valuessrc>Avg_Age</valuessrc>
+              <labelssrc>State</labelssrc>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+              <textinfo>label+value</textinfo>
+              <hoverinfo>percent+label+value</hoverinfo>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-5.0880443278635541</range>
+                <range>16.345332191238125</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>State</text>
+                </title>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-9.7132115679056277</range>
+                <range>57.971135334520682</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Avg_Age</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>state wise average customer age data in bar chart using interactive chart tool</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1098" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\admin\AppData\Local\Temp\Engine_7544_cb163bdabf4035409ada94a40399ce5d_\Engine_7544_cf7b2c59e8389844b3843fede7e2dc5c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Viewing the results using browse tool</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output26" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Alteryx Project 6 Solution</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="14e8f7ee-200b-48eb-ba1c-862d67d64523" />
+      <Telemetry>
+        <PreviousWorkflowId value="1f344c09-b221-41a3-b64d-1a5220bb53c2" />
+        <OriginWorkflowId value="1f344c09-b221-41a3-b64d-1a5220bb53c2" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
